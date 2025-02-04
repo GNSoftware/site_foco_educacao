@@ -507,6 +507,21 @@ section {
     gap: 30px;
   }
 
+  .containerMIS{
+
+    flex-direction: column;
+  }
+
+  .gallery{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    
+  }
+
 
   .banner {
     flex-direction: column;
@@ -682,4 +697,48 @@ section {
   border-radius: 50%;
   cursor: pointer;
   font-weight: bold;
+}
+
+
+
+
+.containerMIS {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+.texto {
+  width: 90%;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+
+.imagem {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.imagem img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* No mobile, aumentar as imagens */
+@media (max-width: 768px) {
+  .imagem {
+    width: 80%;
+  }
+  .imagem img {
+    max-width: 100%;
+  }
 }
