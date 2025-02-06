@@ -1,4 +1,6 @@
 /* Reseta estilos padrão */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -23,9 +25,11 @@ body {
 
 /* Cabeçalho */
 .header {
-  background: #6b1b7a;
+  background: #5d176a;
   color: #fff;
   padding: 10px 0;
+  font-family: 'Poppins', sans-serif; /* Fonte moderna e legível */
+
 }
 
 .container {
@@ -33,6 +37,8 @@ body {
   margin: 0 auto;
   
 }
+
+
 
 .containerC{
 
@@ -43,15 +49,40 @@ body {
   flex-direction: column;
 }
 
-.container0 {
+.container0,.container,.main-container,.container3 {
   width: 80%;
   margin: 0 auto;
   border-bottom: 0.8px solid #ccc;
-  padding: 10px;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif; /* Fonte elegante */
+  color: #333; /* Cor do texto */
+  background-color: #f9f9f9; /* Fundo suave */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
+}
+
+/* Estilizando o texto dentro do container */
+.container0 p {
+  font-size: 1.1rem; /* Tamanho do texto confortável */
+  line-height: 1.6; /* Espaçamento entre as linhas para melhor leitura */
+  letter-spacing: 0.5px; /* Aumentando o espaçamento das letras */
+  margin-bottom: 15px;
+  color: #555; /* Cor do texto */
+}
+
+/* Estilo para títulos dentro do container */
+.container0 h2 {
+  font-size: 1.8rem; /* Tamanho maior para o título */
+  font-weight: 600;
+  color: #222; /* Cor do título */
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Texto em maiúsculas */
+  letter-spacing: 1px;
+  text-align: center; /* Alinhamento centralizado */
 }
 
 
-.container3,.containerContato,.container2 {
+.container3,.containerContato{
   width: 80%;
   display: flex;
   align-items: center;
@@ -59,6 +90,46 @@ body {
   flex-direction: column;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+.container2,.container0{
+
+  background-color: white;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.container2 {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif; /* Fonte moderna e legível */
+  color: #333; /* Cor do texto */
+  background-color: #ffffff; /* Fundo claro */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+}
+
+/* Estilizando o texto dentro do container */
+.container2 p {
+  font-size: 1.0rem; /* Tamanho do texto confortável */
+  line-height: 1.5; /* Espaçamento entre as linhas para maior legibilidade */
+  letter-spacing: 0.5px; /* Aumentando o espaçamento das letras */
+  margin-bottom: 20px;
+  color: #555; /* Cor do texto */
+  text-align: justify; /* Alinhamento justificado */
+}
+
+/* Estilo para títulos dentro do container */
+.container2 h2 {
+  font-size: 2rem; /* Tamanho maior para o título */
+  font-weight: 600;
+  color: #222; /* Cor escura para o título */
+  margin-bottom: 25px;
+  text-transform: uppercase; /* Texto em maiúsculas */
+  letter-spacing: 1px;
+  text-align: center; /* Alinhamento centralizado */
 }
 
 .container4{
@@ -140,6 +211,12 @@ section {
   flex-direction: column;
   gap: 55px;
   text-align: center;
+}
+
+.aprovacao,.container{
+
+  background-color: white;
+  padding: 20px;
 }
 
 .about h2, .aprovacao h2, .contact h2, .courses h2{
@@ -272,7 +349,7 @@ section {
 
 
 .banner {
-  width: 70%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -292,10 +369,10 @@ section {
 }
 
 .image-container img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 .text-container {
@@ -699,7 +776,12 @@ section {
   font-weight: bold;
 }
 
+.btn:hover{
 
+  background-color: #d6af14;
+  transition: 1s;
+
+}
 
 
 .containerMIS {
@@ -741,4 +823,254 @@ section {
   .imagem img {
     max-width: 100%;
   }
+}
+
+
+
+
+
+
+/* Estilos gerais do contêiner principal */
+.main-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Títulos das seções */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Seção de missão */
+.mission-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Para ajustar no mobile */
+}
+
+/* Estilo do texto da missão */
+.mission-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+/* Estilo da imagem */
+.mission-image {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Para garantir que não sobreponha o texto */
+}
+
+.mission-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de parceiros */
+.partners {
+  margin-top: 60px;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+}
+
+.partners-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.partner-item {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.partner-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.partner-item:hover {
+  transform: scale(1.05);
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+  .main-container {
+      padding: 10px;
+  }
+
+  .section-title {
+      font-size: 1.8rem;
+  }
+
+  /* Ajustes na seção de missão */
+  .mission-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .mission-text {
+      padding-right: 0;
+      font-size: 1rem;
+  }
+
+  .mission-image {
+      flex: 1;
+      margin-top: 20px;
+  }
+
+  /* Ajustes na galeria de patrocinadores */
+  .partners-gallery {
+      justify-content: center;
+      gap: 15px;
+  }
+
+  .partner-item {
+      width: 150px;
+      height: 150px;
+  }
+}
+
+/* Ajustes para dispositivos muito pequenos (ex: smartphones) */
+@media (max-width: 480px) {
+  .section-title {
+      font-size: 1.6rem;
+  }
+
+  .mission-text {
+      font-size: 0.95rem;
+  }
+
+  .partner-item {
+      width: 130px;
+      height: 130px;
+  }
+}
+
+
+
+
+
+
+
+/* Estilo geral da seção de colaboradores */
+.collaborators-section {
+  padding: 70px 0;
+ 
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.section-heading h2 {
+  font-size: 1.0rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Galeria de colaboradores */
+.collaborators-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* Item individual na galeria */
+.collaborator-item {
+  width: 150px;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+/* Imagem dentro do item */
+.collaborator-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+}
+
+/* Efeito de hover nos itens */
+.collaborator-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de hover na imagem */
+.collaborator-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .collaborators-section {
+      padding: 40px 0;
+  }
+
+  .section-heading {
+      font-size: 1.5rem;
+      letter-spacing: 0.5px;
+  }
+
+  .collaborators-gallery {
+      justify-content: center;
+      gap: 20px;
+  }
+
+  .collaborator-item {
+      width: 200px;
+      height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-heading h2 {
+      font-size: 19px;
+  }
+
+  /* .collaborator-item {
+      width: 150px;
+      height: 150px;
+  } */
 }
