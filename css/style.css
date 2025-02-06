@@ -589,6 +589,12 @@ section {
     flex-direction: column;
   }
 
+  .container2,.container,.main-container{
+
+    width: 100%;
+  }
+
+
   .gallery{
 
     display: flex;
